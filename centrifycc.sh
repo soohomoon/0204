@@ -458,7 +458,7 @@ generate_computer_name
 r=$? 
 [ $r -ne 0 ] && echo "$CENTRIFY_MSG_PREX: error in generating computer name [exit code=$r]" && exit $r
 
-prerequisite
+#prerequisite
 r=$? 
 [ $r -ne 0 ] && echo "$CENTRIFY_MSG_PREX: cannot set up pre-requisites [Exit code=$r]" && exit $r
 
