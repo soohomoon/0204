@@ -88,7 +88,8 @@ function generate_computer_name()
     HOSTNAME)
         #host_name=`hostname`
         existing_hostname=`hostname`
-        host_name="`echo $existing_hostname | cut -d. -f1`"
+        #host_name="`echo $existing_hostname | cut -d. -f1`"
+	host_name="`echo $existing_hostname"
         if [ "$CENTRIFYCC_COMPUTER_NAME_PREFIX" = "" ];then
             COMPUTER_NAME="$host_name"
         else
